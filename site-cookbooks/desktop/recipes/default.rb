@@ -15,3 +15,12 @@ execute 'Desktop' do
   command 'yum -y groupinstall Desktop'
   action :run
 end
+
+file "/etc/inittab" do
+  owner 'root'
+  group 'root'
+  mode '0644'
+  content <<-EOF
+    id:5:initdefault:
+  EOF
+end
