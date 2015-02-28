@@ -15,8 +15,8 @@ file "/etc/sysconfig/i18n" do
   group 'root'
   mode '0644'
   content <<-EOF
-    LANG="ja_JP.UTF-8"
-    SYSFONT="latarcyrheb-sun16"
+LANG="ja_JP.UTF-8"
+SYSFONT="latarcyrheb-sun16"
   EOF
 end
 
@@ -25,4 +25,16 @@ file "/etc/localtime" do
   group 'root'
   mode '0644'
   content IO.read( "/usr/share/zoneinfo/Japan" )
+end
+
+file "/etc/sysconfig/keyboard" do
+  owner 'root'
+  group 'root'
+  mode '0644'
+  content <<-EOF
+KEYTABLE="jp106"
+MODEL="jp106"
+LAYOUT="jp"
+KEYBOARDTYPE="pc"
+  EOF
 end

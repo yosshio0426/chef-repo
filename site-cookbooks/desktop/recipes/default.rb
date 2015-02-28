@@ -21,6 +21,6 @@ file "/etc/inittab" do
   group 'root'
   mode '0644'
   content <<-EOF
-    id:5:initdefault:
+id:5:initdefault:
   EOF
 end
