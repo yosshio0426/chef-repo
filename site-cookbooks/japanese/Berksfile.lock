@@ -1,7 +1,0 @@
-DEPENDENCIES
-  japanese
-    path: .
-    metadata: true
-
-GRAPH
-  japanese (0.1.0)
