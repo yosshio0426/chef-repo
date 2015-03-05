@@ -6,13 +6,13 @@
 
 execute 'X Window System' do
   user "root"
-  command 'yum -y groupinstall "X Window System"'
+  command 'sudo yum -y groupinstall "X Window System"'
   action :run
 end
 
 execute 'Desktop' do
   user "root"
-  command 'yum -y groupinstall Desktop'
+  command 'sudo yum -y groupinstall Desktop'
   action :run
 end
 

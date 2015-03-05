@@ -6,7 +6,7 @@
 
 execute 'Japanese Support' do
   user "root"
-  command 'yum -y groupinstall "Japanese Support"'
+  command 'sudo yum -y groupinstall "Japanese Support"'
   action :run
 end
 
